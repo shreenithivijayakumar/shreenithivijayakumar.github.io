@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>C.V. Shreenithi | Backend & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f4f2;--surface:#ffffff;--ink:#12261c;--muted:#51655a;--line:#d3ddd7;--accent:#2f7d32;--accent-ink:#ffffff;--code:#0f1d16;--code-ink:#d8eadd;--code-key:#7fd37f;--code-str:#f0b66b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1712;--surface:#16231b;--ink:#e6f1ea;--muted:#9bb0a3;--line:#27382d;--accent:#6fd36f;--accent-ink:#0e1712}}
+:root[data-theme="dark"]{--bg:#0e1712;--surface:#16231b;--ink:#e6f1ea;--muted:#9bb0a3;--line:#27382d;--accent:#6fd36f;--accent-ink:#0e1712}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+nav b{font-weight:800;font-size:19px}
+nav div{display:flex;gap:20px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:56px 0 80px}
+h1{font-size:clamp(44px,7vw,84px);line-height:.98;margin:0 0 22px;font-weight:800;letter-spacing:-.03em}
+.role{font-size:20px;color:var(--muted);max-width:30em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.term{background:var(--code);color:var(--code-ink);border-radius:12px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13.5px;line-height:1.7;overflow:hidden;box-shadow:0 18px 40px -22px rgba(0,0,0,.5)}
+.term .bar{padding:10px 16px;border-bottom:1px solid #243a2d;color:#8fb09b;font-size:12px}
+.term pre{margin:0;padding:16px;overflow-x:auto}
+.k{color:var(--code-key)}.s{color:var(--code-str)}.ok{color:#7fd37f}
+section{padding:68px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);margin:0 0 30px;letter-spacing:-.02em;font-weight:800}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+p{margin:0 0 16px;max-width:62ch}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
+.facts span{color:var(--muted)}
+.facts b{text-align:right;font-weight:600}
+.tl{border-left:2px solid var(--accent);margin-left:6px;padding-left:26px}
+.tl article{margin-bottom:28px;position:relative}
+.tl article::before{content:"";position:absolute;left:-34px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl h3{margin:0 0 2px;font-size:20px}
+.tl small{color:var(--muted);font-size:14px}
+.tl p{margin:6px 0 0}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px}
+.proj h3{font-size:30px;margin:0 0 12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.tags li{font-family:"JetBrains Mono",monospace;font-size:12.5px;border:1px solid var(--line);padding:4px 10px;border-radius:99px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-family:"JetBrains Mono",monospace}
+.tw{overflow-x:auto}
+td{padding:9px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+td:first-child{color:var(--accent);font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:34px}
+.skills h3{font-size:17px;margin:0 0 10px}
+.skills ul{margin:0;padding:0;list-style:none;color:var(--muted)}
+.skills li{padding:4px 0}
+.contact{font-size:clamp(22px,3.4vw,32px);max-width:24em;font-weight:600;line-height:1.3}
+footer{padding:30px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.rise{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}}
+@media (max-width:760px){.hero,.two,.proj{grid-template-columns:1fr}.proj{padding:22px}.hero{padding-top:30px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>C.V. Shreenithi</b><div><a href="#about">About</a><a href="#experience">Internship</a><a href="#project">Project</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Shreenithi<br>C.V.</h1>
+<p class="role">Computer Science student building backend services with Java and Spring Boot, and the React interfaces that put them to use.</p>
+<div class="btns"><a class="btn pri" href="https://github.com/shreenithivijayakumar/Todo">View TodoFlow on GitHub</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="term rise" aria-label="Sample API request and response">
+<div class="bar">GET /users/shreenithi/todos</div>
+<pre><span class="ok">200 OK</span>
+[
+  {
+    <span class="k">"id"</span>: 1,
+    <span class="k">"title"</span>: <span class="s">"Record correction"</span>,
+    <span class="k">"completed"</span>: true,
+    <span class="k">"username"</span>: <span class="s">"shreenithi"</span>
+  },
+  {
+    <span class="k">"id"</span>: 2,
+    <span class="k">"title"</span>: <span class="s">"Drive"</span>,
+    <span class="k">"completed"</span>: false,
+    <span class="k">"username"</span>: <span class="s">"shreenithi"</span>
+  }
+]</pre>
+</div>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<div class="two">
+<div>
+<p>I'm a third-year B.Sc. Computer Science student at Dr. N.G.P. Arts and Science College, Coimbatore. I enjoy the part of software you don't see: the endpoints, the data model and the rules that keep an application reliable.</p>
+<p>In May and June 2026 I completed a backend development internship at SWIN Technologies, where I learned Spring Boot from the ground up and then built a full-stack app, TodoFlow, to put it into practice.</p>
+</div>
+<ul class="facts">
+<li><span>Degree</span><b>B.Sc. Computer Science</b></li>
+<li><span>College</span><b>Dr. N.G.P. Arts and Science College</b></li>
+<li><span>University</span><b>Bharathiar University</b></li>
+<li><span>Batch</span><b>2024 – 2027</b></li>
+<li><span>Location</span><b>Coimbatore, Tamil Nadu</b></li>
+</ul>
+</div>
+</section>
+
+<section id="experience">
+<h2>Internship</h2>
+<div class="tl">
+<article><h3>Backend Development Intern, SWIN Technologies Private Limited</h3><small>1 May – 6 June 2026, Coimbatore</small>
+<p>SWIN Technologies is the India-based engineering arm of TrusTrace, a SaaS company building supply-chain traceability for the fashion and textile industries. I trained with the team on how professional backend services are designed, tested and maintained.</p></article>
+<article><h3>Foundations: Java 17, Maven and Spring</h3><small>May 2026</small>
+<p>Revised core Java and OOP, then learned the Spring Framework, Spring Boot auto-configuration, dependency injection and the main stereotype annotations.</p></article>
+<article><h3>REST APIs and persistence</h3><small>May 2026</small>
+<p>Designed resource-based endpoints under <code>/users/{username}/todos</code>, mapped entities with JPA and Hibernate, and built the repository and service layers with Spring Data JPA.</p></article>
+<article><h3>Database migration and integration</h3><small>Late May – June 2026</small>
+<p>Moved the app from H2 to MySQL, configured CORS, tested every endpoint in Postman, and connected the API to a React front end before presenting the final project.</p></article>
+</div>
+</section>
+
+<section id="project">
+<h2>Featured project</h2>
+<div class="proj">
+<div>
+<h3>TodoFlow</h3>
+<p>A full-stack task manager. Users add, edit, complete and delete tasks, filter by All, Active or Completed, and see their progress at a glance on a dashboard with a completion ring. Priorities (Low, Medium, High) and categories help organise the list.</p>
+<p>The Spring Boot REST API is kept separate from the React front end, so each side can be built and tested on its own.</p>
+<ul class="tags"><li>Java 17</li><li>Spring Boot 3.3</li><li>Spring Data JPA</li><li>Hibernate</li><li>H2 / MySQL</li><li>React</li><li>Vite</li><li>Postman</li></ul>
+<a class="btn pri" href="https://github.com/shreenithivijayakumar/Todo">Read the code on GitHub</a>
+</div>
+<div class="tw">
+<table aria-label="TodoFlow API endpoints">
+<tr><td>GET</td><td>/users/{username}/todos</td></tr>
+<tr><td>GET</td><td>/users/{username}/todos/{id}</td></tr>
+<tr><td>POST</td><td>/users/{username}/todos</td></tr>
+<tr><td>PUT</td><td>/users/{username}/todos/{id}</td></tr>
+<tr><td>DELETE</td><td>/users/{username}/todos/{id}</td></tr>
+</table>
+<p style="margin-top:18px;color:var(--muted);font-size:15px">Controller, service, repository and entity layers, with meaningful HTTP status codes (200, 201, 404, 500) returned to the client.</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Backend</h3><ul><li>Java 17</li><li>Spring Framework and Spring Boot</li><li>REST API design</li><li>Spring Data JPA and Hibernate</li></ul></div>
+<div><h3>Frontend</h3><ul><li>React</li><li>Vite</li><li>JavaScript (fetch, hooks)</li><li>Responsive dashboard UI</li></ul></div>
+<div><h3>Data</h3><ul><li>MySQL</li><li>H2 in-memory database</li><li>Schema and entity design</li></ul></div>
+<div><h3>Tools</h3><ul><li>Maven</li><li>Git and GitHub</li><li>Postman</li><li>IntelliJ IDEA and VS Code</li></ul></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p class="contact">Looking for internships and entry-level roles in backend and full-stack development.</p>
+<div class="btns" style="margin-top:22px"><a class="btn pri" href="mailto:sshreenithivijayakumar@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/shreenithi-c-v-571a6b356">LinkedIn</a><a class="btn" href="https://github.com/shreenithivijayakumar">GitHub</a></div>
+<p style="margin-top:22px;color:var(--muted)">sshreenithivijayakumar@gmail.com</p>
+</section>
+<footer>C.V. Shreenithi · Reg. No. 24UGCSC00093 · Dr. N.G.P. Arts and Science College, Coimbatore</footer>
+</div>
+</body>
+</html>
